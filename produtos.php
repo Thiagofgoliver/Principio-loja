@@ -27,6 +27,10 @@ include_once("./$pasta/pesquisa.php");
             <main class="ms-sm-auto col-lg-10 px-md-4">
                 <?php include_once("./padrao/titulo_pesquisa.php");?>
 
+
+                <?php include_once("./$pasta/filtro.php")?>
+
+ 
               
                 <?php include_once("./$pasta/tabela.php")?>
             </main>

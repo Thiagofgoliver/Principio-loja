@@ -1,8 +1,8 @@
 <?php
-$nomeServidor = "at22_thiago.mysql.dbaas.com.br";
-$userBanco = "at22_thiago";
-$senhaBanco = "TIatsenac2022#";
-$nomeBanco = "at22_thiago";
+$nomeServidor = "localhost";
+$userBanco = "root";
+$senhaBanco = "";
+$nomeBanco = "northwind";
 
 try {
     $conn = mysqli_connect(

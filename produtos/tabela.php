@@ -12,7 +12,7 @@
                         </thead>
                         <tbody>
                             <?php
-                            while ($linha = mysqli_fetch_assoc($result)) {
+                            while ($linha = mysqli_fetch_array($result)) {
                             ?>
                                 <tr>
                                     <!-- coluna com botao alterar -->
@@ -38,7 +38,8 @@
 
                                 <!-- lixeira -->
                                     <td class="text-center">
-                                        <a href="#" class="text-danger" data-bs-toggle="modal" data-bs-target="#excluirModal">
+                                        <a href="#" onclick="excluir(<?php echo ($linha["IDProduto"] . ",'". $linha["NomeProduto"]."'");?>)"  
+                                        class="text-danger" data-bs-toggle="modal" data-bs-target="#excluirModal">
                                             <span data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Clique para excluir o registro">
                                                 <i class="bi bi-trash-fill"></i>
                                             </span>
