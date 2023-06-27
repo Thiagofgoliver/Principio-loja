@@ -17,7 +17,7 @@
                                 <tr>
                                     <!-- coluna com botao alterar -->
                                     <td class="text-center">
-                                        <a href="categoria_cadastro.php?id=" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Clique para alterar o registro">
+                                        <a href="produtos_cadastro.php?id=<?=$linha[0]?>" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Clique para alterar o registro">
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                     </td>
