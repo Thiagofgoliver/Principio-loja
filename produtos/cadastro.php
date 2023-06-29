@@ -19,7 +19,7 @@ if($total == 1){
 
     $linha = mysqli_fetch_array($result);
     $valor["IDProduto"] = $linha["IDProduto"];
-    $valor["NomeProduto"] = $linha["IDProduto"];
+    $valor["NomeProduto"] = $linha["NomeProduto"];
     $valor["QuantidadePorUnidade"] =$linha["QuantidadePorUnidade"];
 
 
