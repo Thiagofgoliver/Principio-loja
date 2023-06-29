@@ -36,6 +36,30 @@ include_once("./$pasta/cadastro.php");
 <?php include_once("./padrao/modal_excluir.php")?>
 
     <?php include ("./padrao/script_padrao.php");?>
-    <?php include ("./categoria/script_pesquisa.php");?></body>
+    <?php include ("./categoria/script_pesquisa.php");?>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+
+
+</script>
+</body>
 
 </html>

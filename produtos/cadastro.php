@@ -18,17 +18,25 @@ if($total == 1){
     $tipo ="ALTERANDO REGISTRO";
 
     $linha = mysqli_fetch_array($result);
+    $valor["IDProduto"] = $linha["IDProduto"];
+    $valor["NomeProduto"] = $linha["IDProduto"];
+    $valor["QuantidadePorUnidade"] =$linha["QuantidadePorUnidade"];
 
-   $dados=[
-    $linha["IDProduto"],
-    $linha["NomeProduto"],
-    $linha["QuantidadePorUnidade"],
 
-    
-
-    
-    ];
+} else{
+    $valor["IDProduto"] = "";
+    $valor["NomeProduto"] = "";
+    $valor["QuantidadePorUnidade"] = "";
 
 
 }
+
+
+    
+
+    
+  
+
+
+
 ?>
